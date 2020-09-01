@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Released on:</strong>
+  <%= @product.released_on %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @product.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @product.updated_at %>
+</p>
+
+<p>
+  <strong>Reviews:</strong>
+  <ul>
+    <% @product.reviews.each_with_index do |review, i| %>
+      <li><%= review.content %></li>
+    <% end  %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

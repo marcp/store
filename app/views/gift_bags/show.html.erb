@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @gift_bag.sender %>
+</p>
+
+<p>
+  <strong>Recipient:</strong>
+  <%= @gift_bag.recipient %>
+</p>
+
+<%= link_to 'Edit', edit_gift_bag_path(@gift_bag) %> |
+<%= link_to 'Back', gift_bags_path %>
