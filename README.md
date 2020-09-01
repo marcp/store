@@ -1,1 +1,4 @@
-# store
+# Store
+
+Rails
+MongoDB
